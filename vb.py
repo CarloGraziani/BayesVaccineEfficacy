@@ -2,6 +2,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from priors import *
+import sys
+sys.path.insert(0,".")
 
 ############## Job Control ##################################
 # Default values, overridden by vb_in.py
@@ -25,7 +27,9 @@ jobctl_0 = {
 try:
     from vb_in import jobctl
     jobctl_0.update(jobctl)
+    print("Imported job from vb_in.py")
 except ImportError:
+    print("No job imported, using defaults")
     pass 
 
 # All keys in jobctl_0 now to become variables:
