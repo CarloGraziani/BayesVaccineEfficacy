@@ -15,5 +15,5 @@ jobctl = {
     "cred": 0.90, # Probability level of credible regions
     "cred_lb" : 0.99, # Probability level of lower bound
     "nsamp" : 1000, # Number of equal-spaced samples in [0,1] for the posterior
-    "prior" : show_me_prior, # Prior choice, from 'priors.py'
+    "prior" : uniform_prior,  # Prior choice, from 'priors.py'
 }
