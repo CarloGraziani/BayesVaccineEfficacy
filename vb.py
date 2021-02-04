@@ -16,6 +16,7 @@ jobctl_0 = {
         "Moderna (Final)" : {"n_p":185, "n_v":11, "v2p_ratio":1.0, "xlo":0.75},
         "Moderna (Severe)" : {"n_p": 30, "n_v":0, "v2p_ratio":1.0, "xlo":0.70},
         "Sputnik V (Interim)" : {"n_p":31, "n_v":8, "v2p_ratio":3.0, "xlo":0.45},
+        "CoronaVac (Interim, Turkey)" : {"n_p":26, "n_v":3, "v2p_ratio":752.0/570.0, "xlo":0.3},
     },
     "cred": 0.90, # Probability level of credible regions
     "cred_lb" : 0.99, # Probability level of lower bound
@@ -30,7 +31,7 @@ try:
     print("Imported job from vb_in.py")
 except ImportError:
     print("No job imported, using defaults")
-    pass 
+    pass
 
 # All keys in jobctl_0 now to become variables:
 globals().update(jobctl_0)
@@ -75,7 +76,7 @@ for trialname in trials.keys():
     lb_y = list(posterior[lb_ind:])
     lb_y.insert(0,0.0)
     lb_y.append(0.0)
-    
+
     eff_mp = eff[inds[0]]
     eff_ci[0] = eff[inds[0]]
     eff_ci[1] = eff[inds[0]]
@@ -96,8 +97,8 @@ for trialname in trials.keys():
     ci_y.insert(0,0.0)
     ci_y.append(0.0)
 
-    print(trialname + 
-          ": Max Posterior Effectiveness = %6.3f; %4.1f%% CI = [%6.3f, %6.3f]; %4.1f%% Lower Bound = %6.3f\n" % 
+    print(trialname +
+          ": Max Posterior Effectiveness = %6.3f; %4.1f%% CI = [%6.3f, %6.3f]; %4.1f%% Lower Bound = %6.3f\n" %
           (eff_mp, cred*100.0, eff_ci[0], eff_ci[1], cred_lb*100.0, eff_lb) )
 
     fig = plt.figure()
@@ -112,8 +113,8 @@ for trialname in trials.keys():
     ax.tick_params(labelsize=fsize)
 
     ax.plot(eff,posterior,'b-', linewidth=lw_plot)
-    ax.axvline(eff_mp, color="c", linewidth=lw_plot, 
-               linestyle="--", 
+    ax.axvline(eff_mp, color="c", linewidth=lw_plot,
+               linestyle="--",
                label='Max Posterior: Eff. = %5.3f'%(eff_mp) )
 
     ax.fill(ci_x, ci_y, color='r', alpha=0.4,
@@ -123,7 +124,7 @@ for trialname in trials.keys():
     # ax.axvline(eff_ci[1], color='r', linewidth=lw_ci, linestyle=":")
 
     #ax.axvline(eff_lb, color='g', linewidth=lw_ci, linestyle="-.")
-    ax.fill(lb_x, lb_y, hatch="/", fill=False, 
+    ax.fill(lb_x, lb_y, hatch="/", fill=False,
                label="%4.1f%% Lower Bound: Eff. = %5.3f" % (cred_lb*100, eff_lb))
 
     ax.legend(handlelength=4.0)
@@ -132,4 +133,3 @@ for trialname in trials.keys():
 
     plt.savefig(trialname +".png", format="png")
     plt.clf()
-
