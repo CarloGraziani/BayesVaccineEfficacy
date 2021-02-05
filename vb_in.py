@@ -17,6 +17,8 @@ jobctl = {
         "AstraZeneca SD+SD T2-T1 = 9-11 wks " : {"n_p":32, "n_v":11, "v2p_ratio":0.95, "xlo": 0.1},
         "AstraZeneca SD+SD T2-T1 > 12 wks " : {"n_p":45, "n_v":8, "v2p_ratio":0.95, "xlo": 0.1},
         "AstraZeneca LD+SD" : {"n_p":51, "n_v":10, "v2p_ratio":1.0, "xlo":0.3},
+        "AstraZeneca B.1.1.7" : {"n_p":27, "n_v":7, "v2p_ratio":1.0, "xlo":0.2},
+        "AstraZeneca Non-B.1.1.7" : {"n_p":74, "n_v":12, "v2p_ratio":1.0, "xlo":0.2},
         "AstraZeneca Single Dose, 22-90 days" :{"n_p":71, "n_v":17, "v2p_ratio":1.0, "xlo":0.3},
         "Novavax UK Phase 3" : {"n_p":56, "n_v":6, "v2p_ratio":1.0, "xlo":0.3},
         "Novavax S. Africa Phase 2b" : {"n_p":29, "n_v":15, "v2p_ratio":1.0, "xlo":0.0},
