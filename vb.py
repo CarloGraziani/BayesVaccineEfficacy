@@ -132,4 +132,4 @@ for trialname in trials.keys():
     ax.set_title(trialname + ": Placebo Infections = %d, Vaccine Infections = %d\n Vaccine/Placebo Person-Year Ratio = %4.2f" % (trial["n_p"], trial["n_v"], trial["v2p_ratio"]) )
 
     plt.savefig(trialname +".png", format="png")
-    plt.clf()
+    plt.close(fig)
