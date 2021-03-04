@@ -23,7 +23,16 @@ jobctl = {
         "Novavax UK Phase 3" : {"n_p":56, "n_v":6, "v2p_ratio":1.0, "xlo":0.0},
         "Novavax S. Africa Phase 2b" : {"n_p":29, "n_v":15, "v2p_ratio":1.0, "xlo":0.0},
         "J&J Guessed Data" : {"n_p":349, "n_v":119, "v2p_ratio":1.0, "xlo":0.0},
+        "J&J Overall" : {"n_p":348, "n_v":116, "v2p_ratio":1.0, "xlo":0.0},
+        "J&J North America":{"n_p":196, "n_v":51, "v2p_ratio":1.0, "xlo":0.0},
+        "J&J Brazil":{"n_p":114, "n_v":39, "v2p_ratio":1.0, "xlo":0.0},
+        "J&J South Africa":{"n_p":90, "n_v":43, "v2p_ratio":1.0, "xlo":0.0},
+        "J&J Severe":{"n_p":60, "n_v":14, "v2p_ratio":1.0, "xlo":0.0},
+        "J&J Severe, North America":{"n_p":18, "n_v":4, "v2p_ratio":1.0, "xlo":0.0},
+        "J&J Severe, Brazil":{"n_p":11, "n_v":2, "v2p_ratio":1.0, "xlo":0.0},
+        "J&J Severe, South Africa":{"n_p":30, "n_v":8, "v2p_ratio":1.0, "xlo":0.0},
         "Sinovac (Interim, Turkey)": {"n_p":26, "n_v":3, "v2p_ratio":752.0/570.0, "xlo":0.0},
+        "COVAXIN (preliminary)": {"n_p":36, "n_v":7, "v2p_ratio":1.0, "xlo":0.0}
     },
     "cred": 0.90, # Probability level of credible regions
     "cred_lb" : 0.99, # Probability level of lower bound
