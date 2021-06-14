@@ -6,6 +6,8 @@ jobctl = {
         "Pfizer (Severe)" : {"n_p": 9, "n_v": 1, "v2p_ratio":1.0, "xlo":0.0},
         "Pfizer (14 days after dose1 to dose 2)": {"n_p":27, "n_v":2, "v2p_ratio":1.0, "xlo":0.0},
         "Pfizer (Adolescents)": {"n_p":18, "n_v":0, "v2p_ratio":1.0, "xlo":0.0},
+        "Pfizer (D2+6mo)": {"n_p":850, "n_v":77, "v2p_ratio":1.0, "xlo":0.0},
+        "Pfizer (B.1.351)": {"n_p":6, "n_v":0, "v2p_ratio":1.0, "xlo":0.0},
         "Moderna (Final)" : {"n_p":185, "n_v":11, "v2p_ratio":1.0, "xlo":0.0},
         "Moderna (Severe)" : {"n_p": 30, "n_v":0, "v2p_ratio":1.0, "xlo":0.0},
         "Moderna (14 days after dose 1 to dose 2)" : {"n_p": 35, "n_v":2, "v2p_ratio":1.0, "xlo":0.0},
@@ -30,6 +32,8 @@ jobctl = {
         "Novavax UK Phase 3 Severe (Final,PR)" : {"n_p":5, "n_v":0, "v2p_ratio":1.0, "xlo":0.0},
         "Novavax S. Africa Phase 2b (Final, PR)" : {"n_p":96, "n_v":51, "v2p_ratio":1.0, "xlo":0.0},
         "Novavax S. Africa Phase 2b Severe (Final, PR)" : {"n_p":5, "n_v":0, "v2p_ratio":1.0, "xlo":0.0},
+        "Novavax US+Mex. Phase 3 Overall (PR)" : {"n_p":63, "n_v":14, "v2p_ratio":2.0, "xlo":0.0},
+        "Novavax US+Mex. Phase 3 VOC+VOI (PR)" : {"n_p":38, "n_v":6, "v2p_ratio":2.0, "xlo":0.0},
         "J&J Guessed Data" : {"n_p":349, "n_v":119, "v2p_ratio":1.0, "xlo":0.0},
         "J&J Overall" : {"n_p":348, "n_v":116, "v2p_ratio":1.0, "xlo":0.0},
         "J&J North America":{"n_p":196, "n_v":51, "v2p_ratio":1.0, "xlo":0.0},
@@ -40,7 +44,9 @@ jobctl = {
         "J&J Severe, Brazil":{"n_p":11, "n_v":2, "v2p_ratio":1.0, "xlo":0.0},
         "J&J Severe, South Africa":{"n_p":30, "n_v":8, "v2p_ratio":1.0, "xlo":0.0},
         "Sinovac (Interim, Turkey)": {"n_p":26, "n_v":3, "v2p_ratio":752.0/570.0, "xlo":0.0},
-        "COVAXIN (preliminary)": {"n_p":36, "n_v":7, "v2p_ratio":1.0, "xlo":0.0}
+        "COVAXIN (preliminary)": {"n_p":36, "n_v":7, "v2p_ratio":1.0, "xlo":0.0},
+        # "mRNA Effectiveness, 1 Dose": {"n_p":161, "n_v":8, "v2p_ratio":0.359, "xlo":0.0},
+        # "mRNA Effectiveness, 2 Doses": {"n_p":161, "n_v":3, "v2p_ratio":0.676, "xlo":0.0},
     },
     "cred": 0.90, # Probability level of credible regions
     "cred_lb" : 0.99, # Probability level of lower bound
