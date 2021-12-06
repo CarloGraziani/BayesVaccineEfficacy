@@ -11,6 +11,7 @@ sys.path.insert(0,".")
 jobctl_0 = {
     "samples" : {
         "UK-Omicron-20211203" : {"n_p":10, "n_v":12, "v2p_ratio":4.263, "xlo":0.0},
+        "Israel-Omicron-20211206" : {"n_p":8, "n_v":13, "v2p_ratio":8.17, "xlo":0.0},
         },
     "cred": 0.90, # Probability level of credible regions
     "cred_lb" : 0.99, # Probability level of lower bound
